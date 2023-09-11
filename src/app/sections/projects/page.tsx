@@ -53,7 +53,7 @@ const Projects = () => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             whileHover={{ scale: 1.1 }}
           >
-            <Image className="w-[100px] h-[100px]" src={project.pic} />
+            <Image className="w-[100px] h-[100px]" src={project.pic} alt="image"/>
             <h2 className="text-slate-100 font-semibold text-white">{project.title}</h2>
             <p className="text-slate-100">{project.desc}</p>
             <div className="mt-2">
