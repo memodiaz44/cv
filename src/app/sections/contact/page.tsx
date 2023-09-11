@@ -3,7 +3,7 @@ import Scene from "../../components/Scene";
 import { useState } from "react";
 import { motion } from 'framer-motion';
 
-
+require('dotenv').config();
 
     const Contact = () => {
 
@@ -25,7 +25,7 @@ import { motion } from 'framer-motion';
         const   { email, comment, subject } = data ;
 
         try {
-            const res = await fetch('http://localhost:3000/api/routes', {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_APP_API}/api/routes`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json'
