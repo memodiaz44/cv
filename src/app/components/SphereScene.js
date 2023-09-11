@@ -4,7 +4,7 @@ import { Sphere } from '@react-three/drei';
 import { TextureLoader, MeshBasicMaterial } from 'three';
 
 const SphereScene = () => {
-  const sphereRef = useRef<any>();
+  const sphereRef = useRef();
 
   const texture = useLoader(TextureLoader, '/images/earth.jpeg'); // Replace with the actual path to your image
 

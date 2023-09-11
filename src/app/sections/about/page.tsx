@@ -28,8 +28,14 @@ const About = () => {
         <h1 className="text-white items-center justify-center ml-20 text-2xl">About me</h1>
         <div className="flex items-center justify-center font-mono">
           <p className="m-10">
-          {"I'm a web developer who likes to build full-stack applications to create interactive user experiences using technology and coding as tools."}
-
+           { `   I'm a web developer who likes to build full-stack applications to
+            create interactive user experiences using technology and coding as
+            tools. I'm experienced using front-end technologies such as
+            JavaScript, HTML, CSS, Next.js as a React framework. For the
+            back-end, I work with Node.js, Express as a framework, GraphQL, NoSQL,
+            and SQL databases. Committed to actively seeking opportunities to
+            contribute to innovative projects and consistently deliver
+            high-value products.  `}
           </p>
         </div>
       </div>
