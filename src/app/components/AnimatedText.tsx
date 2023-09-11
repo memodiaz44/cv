@@ -1,7 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const AnimatedTextWord = ({ text }) => {
+type AnimatedTextWordProps = {
+  text: string; // Change the type to match your data
+};
+
+
+const AnimatedTextWord = ({ text }: AnimatedTextWordProps) => {
   const letters = Array.from(text);
 
   // Variants for Container
