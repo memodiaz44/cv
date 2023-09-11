@@ -2,10 +2,12 @@
 import Scene from "../../components/Scene";
 import { useState } from "react";
 import { motion } from 'framer-motion';
-
-require('dotenv').config();
+import dotenv from "dotenv";
+dotenv.config();
 
     const Contact = () => {
+        const apiUrl = process.env.NEXT_PUBLIC_APP_API;
+
 
         const initialFormData = {
             email: "",
@@ -25,7 +27,7 @@ require('dotenv').config();
         const   { email, comment, subject } = data ;
 
         try {
-            const res = await fetch(`${process.env.NEXT_PUBLIC_APP_API}/api/routes`, {
+            const res = await fetch(`${apiUrl}/api/routes`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json'
