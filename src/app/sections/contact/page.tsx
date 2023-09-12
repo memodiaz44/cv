@@ -27,7 +27,7 @@ dotenv.config();
         const   { email, comment, subject } = data ;
 
         try {
-            const res = await fetch(`${apiUrl}/api/routes`, {
+            const res = await fetch(`/api/routes`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json'
