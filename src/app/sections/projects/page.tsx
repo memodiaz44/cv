@@ -21,7 +21,7 @@ const Projects = () => {
       title: "Note Studio",
       desc: "Fullstack application that allows users to create animations in React canvas",
       link: "https://earnest-frangipane-705329.netlify.app/home",
-      gitRepo: "https://github.com/memodiaz44/React-canvas",
+      gitRepo: "https://react-canvas-lime.vercel.app/",
     },
     {
       pic: blog,
