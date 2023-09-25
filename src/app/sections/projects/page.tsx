@@ -20,7 +20,7 @@ const Projects = () => {
     {
       pic: Tracker,
       title: "Crypto Tracker",
-      desc: "The Crypto App is a sophisticated web application that seamlessly retrieves real-time data from the Coingecko API",
+      desc: "The Crypto App is a web application that seamlessly retrieves real-time data from the Coingecko API, it also uses React Redux Toolkit to track the global state",
       link: "https://crypto-search-project.vercel.app/",
       gitRepo: "https://github.com/memodiaz44/crypto-search",
     },
