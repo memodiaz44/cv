@@ -4,6 +4,7 @@ import note from '../../images/note.png';
 import blog from '../../images/blog.png';
 import todo from '../../images/todofull.png';
 import Image from "next/image";
+import Tracker from '../../images/tracker.png';
 import { motion } from "framer-motion";
 import "../../styles.css";
 
@@ -17,11 +18,11 @@ const Projects = () => {
       gitRepo: "https://github.com/memodiaz44/ecommerce-app",
     },
     {
-      pic: note,
-      title: "Note Studio",
-      desc: "Fullstack application that allows users to create animations in React canvas",
-      link: "https://react-canvas-lime.vercel.app/",
-      gitRepo: "https://github.com/memodiaz44/React-canvas",
+      pic: Tracker,
+      title: "Crypto Tracker",
+      desc: "The Crypto App is a sophisticated web application that seamlessly retrieves real-time data from the Coingecko API",
+      link: "https://crypto-search-project.vercel.app/",
+      gitRepo: "https://github.com/memodiaz44/crypto-search",
     },
     {
       pic: blog,
