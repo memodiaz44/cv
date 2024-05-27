@@ -1,7 +1,7 @@
 "use client"
-import ccomerce from "../../images/eshop.png";
+import ccomerce from "../../images/Designer__1_-removebg-preview.png";
 import note from '../../images/note.png';
-import blog from '../../images/blog.png';
+import blog from '../../images/Designer__3_-removebg-preview.png';
 import todo from '../../images/todofull.png';
 import Image from "next/image";
 import Tracker from '../../images/tracker.png';
@@ -12,37 +12,26 @@ const Projects = () => {
   const projects = [
     {
       pic: ccomerce,
-      title: "e-commerce",
-      desc: "A MERN fullstack using React for the frontend and NodeJS, Express and MongoDB for the backend",
-      link: "https://radiant-marzipan-bdcd77.netlify.app/products",
+      title: "Storynote-Pocket FlipBook",
+      desc: "An app that allows user create animated notes, draw, record audio and share across social media",
+      pro:"UIKit, Core Animation, AVFoundation, CoreData",
+      link: "https://apps.apple.com/mx/app/storynote-pocket-flipbook/id6498471411?l=en-GB",
       gitRepo: "https://github.com/memodiaz44/ecommerce-app",
     },
     {
-      pic: Tracker,
-      title: "Crypto Tracker",
-      desc: "The Crypto App is a web application that seamlessly retrieves real-time data from the Coingecko API, it also uses React Redux Toolkit to track the global state",
-      link: "https://crypto-search-project.vercel.app/",
-      gitRepo: "https://github.com/memodiaz44/crypto-search",
-    },
-    {
       pic: blog,
-      title: "My Own Blog",
-      desc: "I am a music producer, so I coded my own blog to connect with my audience using Next.js as a framework and GraphQL as headless CMS",
-      link: "https://next-blog-1vre.vercel.app/",
+      title: "Tap Da Beat",
+      desc: `A game/app based on a "pulse" exercise used in music education to develop independent hand coordination while having fun and playing`,
+      pro: "UIKit, Core Animation, AVFoundation, SpriteKit",
+      link: "https://apps.apple.com/mx/app/tap-da-beat/id6502953184?l=en-GB",
       gitRepo: "https://github.com/memodiaz44/nextBlog",
     },
-    {
-      pic: todo,
-      title: "Fullstack TODO App",
-      desc: "CRUD TODO app in React. I used MySQL to manage user info and created an Express server to connect to it",
-      link: "https://todo-client-rouge-mu.vercel.app",
-      gitRepo: "https://github.com/memodiaz44/todo-client",
-    },
+   
   ];
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <h1 className="text-white text-2xl">Projects</h1>
+      <h1 className="text-white text-2xl">My Apps</h1>
       <div className="flex flex-col md:flex-row mt-10 space-y-4 md:space-x-4 ">
         {projects.map((project, index) => (
           <motion.div
@@ -57,15 +46,17 @@ const Projects = () => {
             <Image className="w-[100px] h-[100px]" src={project.pic} alt="image"/>
             <h2 className="text-slate-100 font-semibold text-white">{project.title}</h2>
             <p className="text-slate-100">{project.desc}</p>
+            <a>
+              Tech Stack
+            </a>
+            <p className="text-slate-100">{project.pro}</p>
             <div className="mt-2">
               <a href={project.link} className="text-blue-500 hover:underline">
-                View Project
+                View in the AppStore
               </a>
             </div>
             <div className="mt-2">
-              <a href={project.gitRepo} className="text-blue-500 hover:underline">
-                GitHub Repository
-              </a>
+            
             </div>
           </motion.div>
         ))}
